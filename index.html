@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paulo Henrique Dias | Analista de Dados & BI</title>
+    <title>Paulo Henrique Dias | Engenharia de Analytics & IA</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,39 +26,46 @@
             background-color: #3b82f6; /* blue-500 */
         }
         .card {
-            @apply bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:scale-105 hover:shadow-xl;
+            @apply bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl border border-slate-100;
+        }
+        .pill {
+            @apply text-sm font-medium px-3 py-1 rounded-full transition-colors duration-200 cursor-default;
         }
     </style>
 </head>
-<body class="text-slate-700">
+<body class="text-slate-700 flex flex-col min-h-screen">
 
     <!-- Header & Hero Section -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <header class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50 transition-all duration-300">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-slate-800">Paulo Henrique Dias</h1>
+            <h1 class="text-xl font-bold text-slate-800 tracking-tight">Paulo Henrique Dias</h1>
             <div class="hidden md:flex space-x-6">
-                <a href="#about" class="text-slate-600 hover:text-blue-500 transition-colors">Sobre</a>
-                <a href="#experience" class="text-slate-600 hover:text-blue-500 transition-colors">Experiência</a>
-                <a href="#skills" class="text-slate-600 hover:text-blue-500 transition-colors">Habilidades</a>
-                <a href="#education" class="text-slate-600 hover:text-blue-500 transition-colors">Formação</a>
+                <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Sobre</a>
+                <a href="#experience" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Experiência</a>
+                <a href="#skills" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Habilidades</a>
+                <a href="#education" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Formação</a>
             </div>
         </nav>
     </header>
 
-    <main class="container mx-auto px-6 py-12">
+    <main class="container mx-auto px-6 py-12 flex-grow">
         <!-- Hero Content -->
         <section class="text-center mb-16 pt-8">
-            <h2 class="text-5xl font-extrabold text-slate-900 mb-3">Paulo Henrique Dias</h2>
-            <p class="text-xl text-slate-600 mb-6">Analista de Dados | Business Intelligence | Planejamento Financeiro</p>
-            <div class="flex justify-center items-center space-x-5">
-                <a href="mailto:paulohenriqdias@hotmail.com" class="text-slate-500 hover:text-blue-500 transition-colors" title="Email">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight">
+                Paulo Henrique Dias
+            </h2>
+            <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
+                Analista Sênior | Engenharia de Analytics | Especialista em Agentes de IA
+            </p>
+            <div class="flex justify-center items-center space-x-6">
+                <a href="mailto:paulohenriqdias@hotmail.com" class="text-slate-400 hover:text-blue-600 transition-colors transform hover:scale-110" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 </a>
-                <a href="https://linkedin.com/in/diashpaulo" target="_blank" class="text-slate-500 hover:text-blue-500 transition-colors" title="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <a href="https://linkedin.com/in/diashpaulo" target="_blank" class="text-slate-400 hover:text-blue-600 transition-colors transform hover:scale-110" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                 </a>
-                <a href="https://app.xperiun.com/in/paulodias" target="_blank" class="text-slate-500 hover:text-blue-500 transition-colors" title="Portfólio">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                <a href="https://app.xperiun.com/in/paulodias" target="_blank" class="text-slate-400 hover:text-blue-600 transition-colors transform hover:scale-110" title="Portfólio">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
                 </a>
             </div>
         </section>
@@ -66,9 +73,9 @@
         <!-- About Section -->
         <section id="about" class="mb-16 scroll-mt-24">
             <h3 class="section-title">Resumo Profissional</h3>
-            <div class="card">
-                <p class="text-lg leading-relaxed">
-                    Profissional com mais de 10 anos de experiência em análise de dados, planejamento financeiro e Business Intelligence, com foco em Power BI, SQL, Power Automate e modelagem de dados. Atuação destacada na automação de processos, criação de dashboards executivos e análise de desempenho corporativo, apoiando decisões estratégicas da alta gestão.
+            <div class="card border-l-4 border-l-blue-500">
+                <p class="text-lg leading-relaxed text-slate-700">
+                    Profissional com mais de 10 anos de experiência na convergência entre <strong>Planejamento Financeiro (FP&A)</strong> e <strong>Business Intelligence</strong>. Atualmente focado em inovação tecnológica, liderando a implementação de <strong>Agentes de IA (LLMs)</strong> e arquiteturas de dados modernas. Especialista em traduzir necessidades de negócio complexas — como viabilidade de infraestrutura (CAPEX/OPEX) — em modelos de dados robustos e soluções automatizadas que suportam decisões estratégicas da alta gestão.
                 </p>
             </div>
         </section>
@@ -77,41 +84,91 @@
         <section id="experience" class="mb-16 scroll-mt-24">
             <h3 class="section-title">Experiência Profissional</h3>
             <div class="space-y-8">
-                <div class="card">
-                    <h4 class="text-xl font-bold text-slate-900">Analista de Planejamento Sênior</h4>
-                    <p class="font-medium text-blue-600">Zurich Airport Brasil - Florianópolis/SC</p>
-                    <p class="text-sm text-slate-500 mb-3">nov/2024 - atual | Anterior: Analista Financeiro II (nov/2022 - nov/2024)</p>
-                    <ul class="list-disc list-inside space-y-2 text-slate-600">
-                        <li>Fechamento mensal, análise de variações e reporting financeiro à diretoria.</li>
-                        <li>Desenvolvimento de dashboards estratégicos em Power BI, integrando Power Apps e Power Automate.</li>
-                        <li>Modelagem de dados em Power Query e DAX.</li>
-                        <li>Análises de viabilidade financeira (CAPEX e OPEX) e modelagem de cenários.</li>
-                        <li>Participação em projetos de BI: DRE, Fluxo de Caixa, Executive Summary, Controle Orçamentário, e mais.</li>
+                
+                <!-- Zurich -->
+                <div class="card relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900">Analista de Planejamento Sênior</h4>
+                            <p class="font-medium text-blue-600">Zurich Airport Brasil - Florianópolis/SC</p>
+                        </div>
+                        <span class="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-full mt-2 md:mt-0 font-medium">nov/2024 - atual</span>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-4 italic">Anterior: Analista Financeiro II (nov/2022 - nov/2024)</p>
+                    
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1">▹</span>
+                            <span><strong>Inovação em IA & Automação:</strong> Liderança no desenvolvimento do ecossistema de Agentes de IA (Projeto Jarvis) integrado ao Teams, com sub-agentes especializados (Da Vinci, Oracle, Atlas) para automação de consultas de BI e governança.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1">▹</span>
+                            <span><strong>Modelagem Financeira Estratégica:</strong> Elaboração de estudos complexos de viabilidade (CAPEX/OPEX) para infraestrutura aeroportuária (ex: sistemas 400Hz), focando em ROI e eficiência operacional.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1">▹</span>
+                            <span><strong>Engenharia de Analytics:</strong> Otimização de performance no Power BI, migrando regras complexas de DAX para Power Query/SQL, garantindo estabilidade e velocidade.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1">▹</span>
+                            <span><strong>Planejamento:</strong> Fechamento mensal, análise de variações orçamentárias e reporting financeiro executivo.</span>
+                        </li>
                     </ul>
                 </div>
+
+                <!-- ProIQ -->
                 <div class="card">
-                    <h4 class="text-xl font-bold text-slate-900">Cofundador | Business Intelligence & Data Solutions</h4>
-                    <p class="font-medium text-blue-600">ProIQ Data House - Florianópolis/SC</p>
-                    <p class="text-sm text-slate-500 mb-3">jun/2025 - atual</p>
-                    <ul class="list-disc list-inside space-y-2 text-slate-600">
-                        <li>Criação de soluções de BI e automação de dados para PMEs.</li>
-                        <li>Desenvolvimento de dashboards interativos e relatórios analíticos em Power BI.</li>
-                        <li>Estruturação de pipelines com Power Automate e coleta automatizada.</li>
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900">Cofundador | Lead de BI & Soluções de Dados</h4>
+                            <p class="font-medium text-blue-600">ProIQ Data House - Florianópolis/SC</p>
+                        </div>
+                        <span class="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-full mt-2 md:mt-0 font-medium">jun/2025 - atual</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1">▹</span>
+                            <span>Consultoria em produtos de dados ponta a ponta para PMEs (ETL até Dashboard).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1">▹</span>
+                            <span>Implementação de fluxos automatizados com <strong>N8N</strong> e <strong>Power Automate</strong>.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1">▹</span>
+                            <span>Foco em UX/UI Design para relatórios corporativos e storytelling de dados.</span>
+                        </li>
                     </ul>
                 </div>
+
+                <!-- Mega Watt -->
                 <div class="card">
-                    <h4 class="text-xl font-bold text-slate-900">Analista de Back Office</h4>
-                    <p class="font-medium text-blue-600">CAMERGE / Mega Watt Comercialização de Energia Ltda. - Florianópolis/SC</p>
-                    <p class="text-sm text-slate-500 mb-3">out/2018 - nov/2022</p>
-                     <ul class="list-disc list-inside space-y-2 text-slate-600">
-                        <li>Desenvolvimento de modelos analíticos em Excel e VBA.</li>
-                        <li>Análise de riscos contratuais e indicadores de desempenho.</li>
-                        <li>Elaboração de relatórios econômicos e dashboards de acompanhamento financeiro.</li>
+                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900">Analista de Back Office</h4>
+                            <p class="font-medium text-blue-600">CAMERGE / Mega Watt - Florianópolis/SC</p>
+                        </div>
+                        <span class="text-sm bg-slate-100 text-slate-600 px-3 py-1 rounded-full mt-2 md:mt-0 font-medium">out/2018 - nov/2022</span>
+                    </div>
+                     <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1">▹</span>
+                            <span>Desenvolvimento de modelos analíticos em Excel/VBA para mitigação de riscos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2 mt-1">▹</span>
+                            <span>Elaboração de dashboards financeiros e indicadores de desempenho (KPIs).</span>
+                        </li>
                     </ul>
                 </div>
-                 <div class="card">
-                    <h4 class="text-xl font-bold text-slate-900">Outras Experiências</h4>
-                    <ul class="list-disc list-inside space-y-2 text-slate-600 mt-3">
+                
+                 <!-- Outras -->
+                 <div class="card bg-slate-50 border-none shadow-none">
+                    <h4 class="text-lg font-bold text-slate-800 mb-2">Outras Experiências</h4>
+                    <ul class="list-disc list-inside space-y-1 text-slate-600 text-sm">
                         <li><span class="font-semibold">Gerente Administrativo-Financeiro</span> - DSL Dry Wall Ltda. Me (2015-2018)</li>
                         <li><span class="font-semibold">Microempreendedor Individual (MEI)</span> (2013-2014)</li>
                     </ul>
@@ -121,49 +178,56 @@
 
         <!-- Skills Section -->
         <section id="skills" class="mb-16 scroll-mt-24">
-            <h3 class="section-title">Habilidades Técnicas</h3>
-            <div class="card">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div>
-                        <h4 class="font-bold text-lg mb-2 text-slate-800">Linguagens e Scripts</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">SQL</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Python (Pandas)</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">VBA</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-lg mb-2 text-slate-800">Ferramentas de BI e Automações</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Power BI</span>
-                             <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">DAX</span>
-                             <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Power Query</span>
-                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Power Automate</span>
-                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Power Apps</span>
-                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Figma</span>
-                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">N8N</span>
-                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Agentes de IA</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-lg mb-2 text-slate-800">Banco de Dados</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">SQL Server</span>                            
-                            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Excel</span>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-3">
-                        <h4 class="font-bold text-lg mb-2 text-slate-800">Análise e Modelagem</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Modelagem Dimensional</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Cenários Financeiros</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">KPIs</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">DRE</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Gestão de Projetos</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Automação de Processos</span>
-                        </div>
+            <h3 class="section-title">Habilidades Técnicas & Competências</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Skill Group 1 -->
+                <div class="card border-t-4 border-t-purple-500 hover:border-t-purple-600">
+                    <h4 class="font-bold text-lg mb-4 text-slate-800 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 text-purple-600"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 2a10 10 0 0 1 10 10h-10V2z"></path><path d="M12 12l9.33 5.39"></path><path d="M12 12l-9.33 5.39"></path></svg>
+                        IA & Automação
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="pill bg-purple-100 text-purple-800">Agentes de IA</span>
+                        <span class="pill bg-purple-100 text-purple-800">Engenharia de Prompt</span>
+                        <span class="pill bg-purple-100 text-purple-800">Copilot Studio</span>
+                        <span class="pill bg-purple-100 text-purple-800">N8N</span>
+                        <span class="pill bg-purple-100 text-purple-800">Power Automate</span>
+                        <span class="pill bg-purple-100 text-purple-800">Power Apps</span>
                     </div>
                 </div>
+
+                <!-- Skill Group 2 -->
+                <div class="card border-t-4 border-t-blue-500 hover:border-t-blue-600">
+                    <h4 class="font-bold text-lg mb-4 text-slate-800 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 text-blue-600"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        Engenharia de Dados & BI
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="pill bg-blue-100 text-blue-800">Power BI (DAX)</span>
+                        <span class="pill bg-blue-100 text-blue-800">SQL Server</span>
+                        <span class="pill bg-blue-100 text-blue-800">Power Query (M)</span>
+                        <span class="pill bg-blue-100 text-blue-800">Python (Pandas)</span>
+                        <span class="pill bg-blue-100 text-blue-800">Databricks</span>
+                        <span class="pill bg-blue-100 text-blue-800">Star Schema</span>
+                    </div>
+                </div>
+
+                <!-- Skill Group 3 -->
+                <div class="card border-t-4 border-t-green-500 hover:border-t-green-600">
+                    <h4 class="font-bold text-lg mb-4 text-slate-800 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 text-green-600"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        Negócios & Gestão
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="pill bg-green-100 text-green-800">Modelagem Financeira</span>
+                        <span class="pill bg-green-100 text-green-800">Viabilidade (VPL/TIR)</span>
+                        <span class="pill bg-green-100 text-green-800">CAPEX/OPEX</span>
+                        <span class="pill bg-green-100 text-green-800">KPIs Operacionais</span>
+                        <span class="pill bg-green-100 text-green-800">Storytelling</span>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -172,22 +236,44 @@
              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                     <h3 class="section-title">Formação Acadêmica</h3>
-                    <div class="card space-y-4">
-                        <p><span class="font-bold">Especialização em Análise de Dados</span> - Xperiun (2024-2025)</p>
-                        <p><span class="font-bold">Pós-Graduação em Finanças e Custos</span> - SENAC/SC (2018-2020)</p>
-                        <p><span class="font-bold">Pós-Graduação em Gerenciamento de Projetos</span> - SENAC/SC (2015-2016)</p>
-                        <p><span class="font-bold">Tecnólogo em Processos Gerenciais</span> - SENAC/SC (2013-2014)</p>
-                        <p><span class="font-bold">Técnico em Mecânica Industrial</span> - IFSC (2010-2012)</p>
+                    <div class="card space-y-4 h-full">
+                        <div class="border-l-2 border-slate-200 pl-4 pb-1">
+                            <p class="font-bold text-slate-800">Especialização em Análise de Dados</p>
+                            <p class="text-sm text-slate-500">Xperiun (2024-2025)</p>
+                        </div>
+                        <div class="border-l-2 border-slate-200 pl-4 pb-1">
+                            <p class="font-bold text-slate-800">Pós-Graduação em Finanças e Custos</p>
+                            <p class="text-sm text-slate-500">SENAC/SC (2018-2020)</p>
+                        </div>
+                        <div class="border-l-2 border-slate-200 pl-4 pb-1">
+                            <p class="font-bold text-slate-800">Pós-Graduação em Gerenciamento de Projetos</p>
+                            <p class="text-sm text-slate-500">SENAC/SC (2015-2016)</p>
+                        </div>
+                        <div class="border-l-2 border-slate-200 pl-4 pb-1">
+                            <p class="font-bold text-slate-800">Tecnólogo em Processos Gerenciais</p>
+                            <p class="text-sm text-slate-500">SENAC/SC (2013-2014)</p>
+                        </div>
                     </div>
                 </div>
                 <div>
-                    <h3 class="section-title">Certificações</h3>
-                    <div class="card space-y-4">
-                        <p class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500 mr-2 flex-shrink-0"><path d="M12 10.953c2.253 0 4.08 1.827 4.08 4.08s-1.827 4.08-4.08 4.08-4.08-1.827-4.08-4.08 1.827-4.08 4.08-4.08z"/><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/></svg> Power BI Completo - Do Básico ao Avançado</p>
-                        <p class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500 mr-2 flex-shrink-0"><path d="M12 10.953c2.253 0 4.08 1.827 4.08 4.08s-1.827 4.08-4.08 4.08-4.08-1.827-4.08-4.08 1.827-4.08 4.08-4.08z"/><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/></svg> Python para Análise de Dados</p>
-                        <p class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500 mr-2 flex-shrink-0"><path d="M12 10.953c2.253 0 4.08 1.827 4.08 4.08s-1.827 4.08-4.08 4.08-4.08-1.827-4.08-4.08 1.827-4.08 4.08-4.08z"/><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/></svg> Power Apps Essencial</p>
-                        <p class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500 mr-2 flex-shrink-0"><path d="M12 10.953c2.253 0 4.08 1.827 4.08 4.08s-1.827 4.08-4.08 4.08-4.08-1.827-4.08-4.08 1.827-4.08 4.08-4.08z"/><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/></svg> Gestão da Qualidade + Gestão de Projetos</p>
-                        <p class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500 mr-2 flex-shrink-0"><path d="M12 10.953c2.253 0 4.08 1.827 4.08 4.08s-1.827 4.08-4.08 4.08-4.08-1.827-4.08-4.08 1.827-4.08 4.08-4.08z"/><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/></svg> Lógica de Programação e Raciocínio Lógico</p>
+                    <h3 class="section-title">Certificações Principais</h3>
+                    <div class="card space-y-3 h-full">
+                         <div class="flex items-center text-slate-700">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Power BI Completo - Do Básico ao Avançado
+                        </div>
+                        <div class="flex items-center text-slate-700">
+                             <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Python para Análise de Dados
+                        </div>
+                        <div class="flex items-center text-slate-700">
+                             <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Power Apps Essencial
+                        </div>
+                        <div class="flex items-center text-slate-700">
+                             <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Lógica de Programação e Raciocínio Lógico
+                        </div>
                     </div>
                 </div>
             </div>
@@ -196,26 +282,21 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-800 text-white mt-16">
-        <div class="container mx-auto px-6 py-8 text-center">
-            <h3 class="text-2xl font-bold mb-2">Vamos nos conectar</h3>
-            <p class="mb-6">Estou aberto a novas oportunidades e colaborações.</p>
-             <div class="flex justify-center items-center space-x-5 mb-6">
-                <a href="mailto:paulohenriqdias@hotmail.com" class="hover:text-blue-400 transition-colors" title="Email">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+    <footer class="bg-slate-800 text-white mt-auto">
+        <div class="container mx-auto px-6 py-10 text-center">
+            <h3 class="text-2xl font-bold mb-2">Vamos conversar?</h3>
+            <p class="mb-8 text-slate-300">Estou disponível para discutir como Agentes de IA e Data Analytics podem transformar seu negócio.</p>
+             <div class="flex justify-center items-center space-x-8 mb-8">
+                <a href="mailto:paulohenriqdias@hotmail.com" class="hover:text-blue-400 transition-colors transform hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 </a>
-                <a href="https://linkedin.com/in/diashpaulo" target="_blank" class="hover:text-blue-400 transition-colors" title="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </a>
-                <a href="https://app.xperiun.com/in/paulodias" target="_blank" class="hover:text-blue-400 transition-colors" title="Portfólio">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                <a href="https://linkedin.com/in/diashpaulo" target="_blank" class="hover:text-blue-400 transition-colors transform hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                 </a>
             </div>
-            <p class="text-slate-400 text-sm">&copy; 2025 Paulo Henrique Dias. Todos os direitos reservados.</p>
+            <p class="text-slate-500 text-sm border-t border-slate-700 pt-6">&copy; 2026 Paulo Henrique Dias. Todos os direitos reservados.</p>
         </div>
     </footer>
 
 </body>
 </html>
-
-
